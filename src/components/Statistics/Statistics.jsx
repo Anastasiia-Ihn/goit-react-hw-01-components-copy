@@ -4,7 +4,7 @@ import { ContainerForStats, Title } from './statistics.styled';
 export const Statistics = ({ title, stats }) => {
   return (
     <ContainerForStats>
-      {{ title } && <Title>{title}</Title>}
+      {title && <Title>{title}</Title>}
       <StatList stats={stats}></StatList>
     </ContainerForStats>
   );
